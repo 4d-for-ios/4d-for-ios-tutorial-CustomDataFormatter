@@ -1,0 +1,11 @@
+{
+   "name": "textToImage",
+   "type": ["text"],
+   "binding": "imageNamed",
+   "choiceList": {"Jean":"jean.png","Laurent":"laurent.png","Vincent":"vincent.png","Eric":"eric.png"},
+   "assets": {
+  "size": {
+   "width": 50, "height": 50
+		}
+	}
+}

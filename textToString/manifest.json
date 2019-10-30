@@ -1,0 +1,7 @@
+{
+   "name": "textToString",
+   "type": ["text"],
+   "binding": "localizedText",
+   "choiceList": {"FRA":"France","MAR":"Morocco","USA":"United States","AUS":"Australia"}
+
+}

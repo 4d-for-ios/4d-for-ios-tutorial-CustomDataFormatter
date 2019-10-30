@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE base SYSTEM "http://www.4d.com/dtd/2007/base.dtd" >
+<base name="" uuid="5CF080D4DA674F75B924C72F3C5EEB1B" collation_locale="en">
+	<schema name="DEFAULT_SCHEMA"/>
+	<table name="Tasks" uuid="0632CFA7133D49649974EE1A97CD6C6A" id="1">
+		<field name="ID" uuid="99AFC5E26F5246B0BCAAA160DE5B7412" type="4" unique="true" autosequence="true" not_null="true" id="1"/>
+		<field name="LastName" uuid="2C323A1562DD4F3DAF85C2ABCE14F8D5" type="10" limiting_length="255" never_null="true" id="2"/>
+		<field name="FirstName" uuid="C7556920BF884AE7A7D3BE282D010CCA" type="10" limiting_length="255" never_null="true" id="3"/>
+		<field name="Job" uuid="97EA1CC3BF784F18851CA2FAB9217EF2" type="3" never_null="true" id="4"/>
+		<field name="Country" uuid="71C41E24F96D4E1188C29183882B84F4" type="10" never_null="true" id="5"/>
+		<field name="TaskDone" uuid="AAD8699E905C4D369C049E5C53B1281E" type="6" never_null="true" id="6"/>
+		<field name="Hours" uuid="DA04F51C745B49ED824E84A08AE821D0" type="6" never_null="true" id="7"/>
+		<field name="Satisfaction" uuid="9F2457883B85463AB9881B3A4CC9914F" type="6" never_null="true" id="8"/>
+		<field name="TaskStatus" uuid="CDDEB0FF8B48472A863969876667E5CE" type="3" never_null="true" id="9"/>
+		<field name="Picture" uuid="6E5C79DA41544177BE441CF3683767B7" type="12" never_null="true" id="10"/>
+		<field name="Manager" uuid="7DB424FEDC3B4BC188D553080E8F0A0C" type="10" limiting_length="255" never_null="true" id="11"/>
+		<field name="__GlobalStamp" uuid="DE593F83E2C444249E47149C25CE9F65" type="5" id="12"/>
+		<primary_key field_name="ID" field_uuid="99AFC5E26F5246B0BCAAA160DE5B7412"/>
+		<table_extra input_form="Input" output_form="Output">
+			<editor_table_info displayable_fields_count="16">
+				<color red="255" green="255" blue="255" alpha="0"/>
+				<coordinates left="279.63671875" top="34.8046875" width="201.40625" height="382.58203125"/>
+			</editor_table_info>
+		</table_extra>
+	</table>
+	<table name="__DeletedRecords" uuid="2E87FB98DF704D528305C03713774E2B" id="2" leave_tag_on_delete="true" prevent_journaling="true">
+		<field name="ID" uuid="F3B2ACA823CA4683A0E06002E1BA1CF0" type="5" unique="true" autosequence="true" id="1"/>
+		<field name="__Stamp" uuid="0CFC5D33A7BB4814A5475B219462E0C3" type="5" id="2"/>
+		<field name="__TableNumber" uuid="BFAB752AC391429EB23289E4A8B580D9" type="4" id="3"/>
+		<field name="__TableName" uuid="E2DB790F95A5487483FBB83A2F332559" type="10" limiting_length="255" id="4"/>
+		<field name="__PrimaryKey" uuid="1F98B1A98215450E98C93C97342F4336" type="10" limiting_length="255" id="5"/>
+		<primary_key field_name="ID" field_uuid="F3B2ACA823CA4683A0E06002E1BA1CF0"/>
+	</table>
+	<index kind="regular" name="__DeletedRecords__Stamp" uuid="39DEA7FD123942EFA9F4C47F16ABBDFE" type="7">
+		<field_ref uuid="0CFC5D33A7BB4814A5475B219462E0C3" name="__Stamp">
+			<table_ref uuid="2E87FB98DF704D528305C03713774E2B" name="__DeletedRecords"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" uuid="7232307146FC49089ED0B28B555F1816" type="7">
+		<field_ref uuid="99AFC5E26F5246B0BCAAA160DE5B7412" name="ID">
+			<table_ref uuid="0632CFA7133D49649974EE1A97CD6C6A" name="Tasks"/>
+		</field_ref>
+	</index>
+	<index kind="regular" unique_keys="true" name="__DeletedRecordsID" uuid="CA34AA23A12B4DF2831026BCC53F33D9" type="7">
+		<field_ref uuid="F3B2ACA823CA4683A0E06002E1BA1CF0" name="ID">
+			<table_ref uuid="2E87FB98DF704D528305C03713774E2B" name="__DeletedRecords"/>
+		</field_ref>
+	</index>
+	<index kind="regular" name="__GlobalStamp_tasks" uuid="D2D6C4F349F04EE5A12A0AE2FB11964D" type="7">
+		<field_ref uuid="DE593F83E2C444249E47149C25CE9F65" name="__GlobalStamp">
+			<table_ref uuid="0632CFA7133D49649974EE1A97CD6C6A" name="Tasks"/>
+		</field_ref>
+	</index>
+	<base_extra __stringCompHash="icu:63.1.0" __keywordBuildingHash="icu:63.1.0" package_name="Task Management" structure_file_name="Task Management" data_file_path=":Task Management.4DD">
+		<journal_file journal_file_enabled="false"/>
+	</base_extra>
+</base>
