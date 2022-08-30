@@ -1,5 +1,4 @@
 # CustomDataFormatter tutorial
-4D for iOS Tutorials
 
 ## Create a static data formatter
 
