@@ -65,7 +65,7 @@
 				"shortLabel": "Country",
 				"valueType": "string",
 				"type": 10,
-				"format": "/textToString"
+				"format": "text"
 			},
 			"3": {
 				"fieldNumber": 3,
@@ -106,7 +106,7 @@
 				"shortLabel": "Job",
 				"valueType": "number",
 				"type": 3,
-				"format": "/integerToString"
+				"format": "integer"
 			},
 			"2": {
 				"fieldNumber": 2,
@@ -128,7 +128,7 @@
 				"shortLabel": "Manager",
 				"valueType": "string",
 				"type": 10,
-				"format": "/textToImage"
+				"format": "text"
 			},
 			"10": {
 				"fieldNumber": 10,
@@ -170,7 +170,7 @@
 				"shortLabel": "Task Status",
 				"valueType": "number",
 				"type": 3,
-				"format": "/integerToImage"
+				"format": "integer"
 			}
 		}
 	},
@@ -203,7 +203,7 @@
 					"path": "Country",
 					"label": "Country",
 					"shortLabel": "Country",
-					"format": "/textToString"
+					"format": "text"
 				},
 				{
 					"fieldNumber": 6,
@@ -236,7 +236,7 @@
 					"name": "Job",
 					"kind": "storage",
 					"fieldType": 8,
-					"format": "/integerToString",
+					"format": "integer",
 					"path": "Job",
 					"label": "Job",
 					"shortLabel": "Job"
@@ -249,7 +249,7 @@
 					"path": "TaskStatus",
 					"label": "Task Status",
 					"shortLabel": "Task Status",
-					"format": "/integerToImage"
+					"format": "integer"
 				},
 				{
 					"fieldNumber": 7,
@@ -277,7 +277,7 @@
 					"path": "Manager",
 					"label": "Manager",
 					"shortLabel": "Manager",
-					"format": "/textToImage"
+					"format": "text"
 				}
 			]
 		}
